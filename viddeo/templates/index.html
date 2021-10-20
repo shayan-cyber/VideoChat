@@ -57,7 +57,7 @@
                             <form action="{% url 'index' %}" method="post" class="mx-4">
                                 {% csrf_token %}
                                 <div class="d-flex">
-                                    <input class="form-control" type="text" name="room", required>
+                                    <input class="form-control" type="text" name="room" placeholder="Meet Code" required>
                                     <button type="submit" class="btn btn-primary ">Join</button>
                                 </div>
                                 
