@@ -138,7 +138,7 @@ CHANNEL_LAYERS = {
         # },
         'CONFIG': {
             # 'hosts': 'videochat.redis.cache.windows.net',
-            'hosts': [(f'redis://:5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=@videochat.redis.cache.windows.net:6380/0')]
+            'hosts': [(f'redis://:5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=@videochat.redis.cache.windows.net:6379/0')]
             # 'port': '6380',
             # 'password': '5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=',
             # 'ssl' : False,
