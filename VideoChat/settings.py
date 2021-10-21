@@ -128,26 +128,20 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
-#         # "CONFIG": {
-#         #     # "hosts": [("127.0.0.1", 6379)],
-#         #     # "hosts":[('redis://:s0W9pJmIq14E59wZxMWoTh2ywi4HBb6R@redis-19237.c212.ap-south-1-1.ec2.cloud.redislabs.com:19237')]
-
-#         # },
-#         'CONFIG': {
-#             # 'hosts': 'videochat.redis.cache.windows.net',
-#             'hosts': [(f'redis://:5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=@videochat.redis.cache.windows.net:6379/0')]
-#             # 'port': '6380',
-#             # 'password': '5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=',
-#             # 'ssl' : False,
-#         },
-#     },
-# }
-
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
-    }
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        # "CONFIG": {
+        #     # "hosts": [("127.0.0.1", 6379)],
+        #     # "hosts":[('redis://:s0W9pJmIq14E59wZxMWoTh2ywi4HBb6R@redis-19237.c212.ap-south-1-1.ec2.cloud.redislabs.com:19237')]
+
+        # },
+        'CONFIG': {
+            # 'hosts': 'videochat.redis.cache.windows.net',
+            'hosts': [(f'redis://:5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=@videochat.redis.cache.windows.net:6379/0')]
+            # 'port': '6380',
+            # 'password': '5ko8w3iZv08gLnRlKTBekIhlB3G4q+SnWiSZA+aLRzA=',
+            # 'ssl' : False,
+        },
+    },
 }
